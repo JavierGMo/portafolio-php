@@ -1,0 +1,239 @@
+:root{
+    --primary-color: #33d9b2;
+    --secondary-color: #54c0a7;
+    --third-color: rgba(217, 164, 51, 0.8);
+    --color-text: #d95133;
+}
+*{
+    /*border: 1px solid black;*/
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, Arial, Helvetica;
+    
+}
+/*Estilos generales*/
+
+a{
+    text-decoration: none;
+    color: var(--color-text, #d95133);
+}
+li{
+    list-style: none;
+}
+
+.btn{
+    cursor: pointer;
+}
+
+.caja-flex{
+    display: flex;
+}
+.filas{
+    flex-direction: row;
+}
+.columnas{
+    flex-direction: column;
+}
+.centrar{
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+.f-0{
+    flex: 0 1 auto;
+}
+.f-1{
+    flex: 1 1 auto;
+}
+.f-2{
+    flex: 2 1 auto;
+}
+img.img-card{    
+    width: 93%;
+    height: 93%;
+    border-radius: 10px;
+}
+img.img-trabajos{
+    width: 50%;
+    height: 50%;
+    border-radius: 10px;
+    margin-right: 3%;
+}
+.cont-sobre-mi, .cont-skills, .cont-contactos{
+    margin: 7% 3%;
+}
+.card{
+    background-color: var(--third-color, #d9a433);
+    border-radius: 25px;
+    padding: 4% 1%;
+}
+div.flecha-left, div.flecha-right{
+    font-size: 7em;
+}
+
+div.flecha-left{
+    position: absolute;
+    right: 90%;
+    bottom: -90%;
+}
+div.flecha-right{
+    position: absolute;
+    left: 90%;
+    bottom: -90%;
+}
+.d-relative{
+    position: relative;
+}
+
+.d-absolute{
+    
+
+}
+.oculto{
+    display: none;
+}
+
+
+/*Fin de estilos generales*/
+
+/*Estilos de nav*/
+nav{
+    background-color: var(--primary-color, #33d9b2);
+}
+.cont-titutlo-principal{
+    margin-left: 1%;
+}
+.opcion-nav{
+    margin-left: 4%;
+    margin-right: 5%;
+}
+.spn-opci{
+    font-size: larger;
+}
+/*Fin de estilos de nav*/
+
+/*contenido principal*/
+/*contendor sobre mi*/
+.cont-sobre-mi{
+    /*margin: 2%;*/
+}
+/*trabajos*/
+.cont-trabajos{
+    margin: auto 2%;
+}
+.cont-text-proyecto{
+    margin-top: 3%;
+}
+.texto-proyecto{
+
+    font-size: 20px;
+
+}
+/*skills*/
+.cont-skills{
+    /*margin: 5%;*/
+}
+.skills-opciones{
+    margin: auto 3%;
+    cursor: pointer;
+}
+.skills-opciones ul{
+    height: 100%;
+}
+.skills-opciones ul li{
+    margin-bottom: 10%;
+}
+.lista-skills{
+    height: 10rem;
+}
+/*contacto*/
+
+.cont-contactos div{
+    margin-right: 3%;
+}
+
+
+/*fin del contenido principal*/
+
+/*footer*/
+footer{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: var(--secondary-color, #54c0a7);
+}
+/*fin dooter*/
+
+/*responsive*/
+
+@media only screen and (min-width: 100px){
+    
+    /*Estilos generales*/
+    .pos-abolute-resw{
+        position: absolute;
+        width: 35%;
+        right: 14%;
+        top: 10.4%;
+        background-color: var(--primary-color);
+    }
+    .columnas-resw{
+        flex-direction: column;
+    }
+    .filas-rew{
+        flex-direction: row;
+    }
+    .coulto-resw{
+        display: none;
+    }
+    div.flecha-left{
+        
+        right: 90.3%;
+        bottom: -30%;
+        font-size: 3.8rem;
+    }
+    div.flecha-right{
+        left: 90.3%;
+        bottom: -30%;
+        font-size: 3.8rem;
+    }
+    img.img-trabajos{
+        width: 90%;
+    }
+    /*fin estilos generales*/
+    /*nav */    
+
+    
+
+    i.barra{
+        font-size: 4rem;
+    }
+    .barra{
+        color: var(--color-text, #d95133);
+    }
+    .barra-hambur{
+        display: flex;
+        padding: 1% 3%;
+    }
+    
+    /*fin del nav */
+    /*sobre mi*/
+    .cont-sobre-mi{
+        font-size: 1.3rem;
+        padding: 5%;
+    }
+    /*trabajos*/
+    .cont-trabajos{
+        margin: 0 4%;
+    }    
+    /*Skills*/    
+    .cont-skills-second{
+
+    }
+    /*contactos*/
+    .ref-contactos{
+        font-size: 1.2rem;
+    }
+
+
+}
